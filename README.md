@@ -6,7 +6,6 @@
   - [Deployment Guide](#deployment-guide)
   - [Inspiration](#inspiration)
   - [What it does](#purpose)
-  - [Build Process](#build-process)
   - [Challenges](#challenges)
   - [Accomplishments](#accomplishments)
   - [What's next for NoFlame](#next-up)
@@ -262,16 +261,6 @@ NoFlame is an innovative fire detection and prevention system that uses advanced
 
 By combining IoT, machine learning, and centralized server technology, NoFlame transforms fire detection into a proactive and scalable solution. It empowers individuals and equips first responders with the tools they need to mitigate fires swiftly and effectively, ensuring tragedies like the Palisade Fires become a thing of the past.  
 
-
-## Build Process
-
-1. Brainstorming: Our group initially ruled out the environment Track, deeming it too hard. However, when one of our moms sent an image of our backyard in hellish flames, we knew we had to create a project based on this.
-
-2. Organization: Once the concrete idea was set, we created a Venn diagram consisting of 4 main components: Frontend (UI/UX), Backend (Flask, Personal Server, Weather API Scraping, Etc), Machine Learning Model and Hardware (Tensorflow, sci-kit-learn, Arduino, Breadboard, ESP32), and finally the MVP.
-
-3. Execution: As a group, we decided to play to our individual strengths to create the best cohesive product we could. Given that Frontend can be more challenging than the others, we assigned two people on the Frontend, one expert backend for backend, and one for the ML and Hardware aspect. For more in-depth details, please visit our booth.
-
-4. Putting it all together: Once all 3-4 aspects were done, we simply merged the created individual branches and created our cohesive project, NoFlame
 
 ## Challenges
 
