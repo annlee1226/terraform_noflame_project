@@ -225,8 +225,6 @@ cd infra
 terraform destroy   # Type 'yes' — removes all OCI resources
 ```
 
-### Cost: $0/month (Always Free forever)
-
 
 ## Inspiration
 
