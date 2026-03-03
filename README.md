@@ -24,7 +24,6 @@ NoFlame is deployed on **Oracle Cloud Infrastructure (OCI)** using Terraform. Th
 
 ```bash
 cd infra
-cp terraform.tfvars.example terraform.tfvars   # Fill in your OCI credentials
 terraform init
 terraform apply
 ```
