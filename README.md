@@ -151,4 +151,4 @@ We didn't just tackle the hard stuff; we turned it into a product we're genuinel
 - Hardware Iteration: Scaling down hardware requirements to make on-site alarms more compact, affordable, and easier to deploy across various environments.
 - Hardware Addition: Incorporating Infrared with the cameras to easily detect if a fire is present. For a more in-depth explanation, please come to our booth!
 
-NoFlame isn't just a project, it's the beginning of a vision to turn reactive fire safety into proactive fire prevention, creating safer communities for everyone. Protection of Inaction.
+NoFlame isn't just a project, it's the beginning of a vision to turn reactive fire safety into proactive fire prevention, creating safer communities for everyone. Protection over Inaction.
