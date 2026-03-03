@@ -38,25 +38,12 @@ NoFlame is deployed on **Oracle Cloud Infrastructure (OCI)** using Terraform. Th
   └──────────────────────────────────────────────────────────┘
 ```
 
-### Why Oracle Cloud?
-
-Oracle Cloud offers an **Always Free tier that never expires** (unlike AWS's 12-month free tier):
-
-| Resource | Always Free Limit |
-|----------|-------------------|
-| AMD Micro VMs | 2 instances (1/8 OCPU, 1GB RAM each) |
-| Block Storage | 200GB |
-| Object Storage | 20GB |
-| Outbound Data | 10TB/month |
-
-No auto-charges. You must manually upgrade to a paid account.
-
 ### Prerequisites
 
 - [Terraform](https://developer.hashicorp.com/terraform/install) (`brew install terraform`)
 - [OCI CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm) (`brew install oci-cli`)
 - [Node.js](https://nodejs.org/) (`brew install node`)
-- An [Oracle Cloud account](https://www.oracle.com/cloud/free/) (free signup, temporary $1 hold refunded)
+- An [Oracle Cloud account](https://www.oracle.com/cloud/free/)
 
 ### Step 1: OCI Account and API Key
 
