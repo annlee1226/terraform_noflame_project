@@ -25,24 +25,22 @@ NoFlame is deployed on **Oracle Cloud Infrastructure (OCI)** using Terraform. Th
 ```bash
 cd infra
 terraform init
-terraform apply
+terraform apply                                # Note the backend_public_ip output
 ```
 
-After the instance is provisioned (~10-15 min), deploy the backend:
+After the instance is provisioned (~10-15 min), deploy the backend using the IP from terraform output:
 
 ```bash
-scp Backend/app.py opc@BACKEND_IP:/opt/noflame/
-scp Backend/wildfire_detection_model.h5 opc@BACKEND_IP:/opt/noflame/
-ssh opc@BACKEND_IP 'sudo systemctl start noflame'
+export BACKEND_IP=$(cd infra && terraform output -raw backend_public_ip)
+
+scp Backend/app.py opc@$BACKEND_IP:/opt/noflame/
+scp Backend/wildfire_detection_model.h5 opc@$BACKEND_IP:/opt/noflame/
+ssh opc@$BACKEND_IP 'sudo systemctl start noflame'
 ```
 
-Set the backend URL in `Frontend/vite-project/.env`:
+Configure and run the frontend:
 ```bash
-VITE_API_URL=http://BACKEND_IP:5001
-```
-
-Then run the frontend:
-```bash
+echo "VITE_API_URL=http://$BACKEND_IP:5001" > Frontend/vite-project/.env
 cd Frontend/vite-project
 npm install && npm run dev
 ```
